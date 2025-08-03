@@ -14,19 +14,19 @@ class Program
         Console.Write("Seleccione una opción: ");
 
         int opcion = int.Parse(Console.ReadLine());
-        // TODO: Implementar la lógica de menú
 
         if (opcion == 1)
         {
             Sumar();
         }
-        else if (opcion==4)
+        else if (opcion == 4)
         {
             Dividir();
         }
 
-            // TODO: Implementar funciones de suma, resta, multiplicación, división
+        // TODO: Implementar funciones de resta, multiplicación
     }
+
     static void Sumar()
     {
         Console.Write("Ingrese el primer número: ");
@@ -36,17 +36,17 @@ class Program
         double resultado = num1 + num2;
         Console.WriteLine($"El resultado de la suma es: {resultado}");
     }
+
     static void Dividir()
-{
-    Console.Write("Ingrese el primer número: ");
-    double a = Convert.ToDouble(Console.ReadLine());
-    Console.Write("Ingrese el segundo número: ");
-    double b = Convert.ToDouble(Console.ReadLine());
+    {
+        Console.Write("Ingrese el primer número: ");
+        double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Ingrese el segundo número: ");
+        double b = Convert.ToDouble(Console.ReadLine());
 
-    if (b != 0)
-        Console.WriteLine($"Resultado: {a / b}");
-    else
-        Console.WriteLine("No se puede dividir entre cero.");
-}
-
+        if (b != 0)
+            Console.WriteLine($"Resultado: {a / b}");
+        else
+            Console.WriteLine("No se puede dividir entre cero.");
+    }
 }
