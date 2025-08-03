@@ -37,16 +37,19 @@ class Program
         Console.WriteLine($"El resultado de la suma es: {resultado}");
     }
 
-    static void Dividir()
-    {
+   static void Dividir()
+    
         Console.Write("Ingrese el primer número: ");
-        double a = Convert.ToDouble(Console.ReadLine());
+        double num1 = double.Parse(Console.ReadLine());
         Console.Write("Ingrese el segundo número: ");
-        double b = Convert.ToDouble(Console.ReadLine());
-
-        if (b != 0)
-            Console.WriteLine($"Resultado: {a / b}");
+        double num2 = double.Parse(Console.ReadLine());
+        if (num2 == 0)
+        {
+            Console.WriteLine("Error: No se puede dividir por cero.");
+        }
         else
-            Console.WriteLine("No se puede dividir entre cero.");
-    }
+        {
+            double resultado = num1 / num2;
+            Console.WriteLine($"El resultado de la división es: {resultado}");
+        }
 }
