@@ -13,6 +13,22 @@ class Program
 
         int opcion = int.Parse(Console.ReadLine());
 
+<<<<<<< HEAD
+=======
+        if (opcion == 1)
+        {
+            Sumar();
+        }
+        else if (opcion == 2)
+        {
+            Restar();
+        }
+
+        // TODO: Implementar funciones de suma, resta, multiplicación, división
+    }
+    static void Sumar()
+    {
+>>>>>>> main
         Console.Write("Ingrese el primer número: ");
         double num1 = double.Parse(Console.ReadLine());
 
@@ -41,6 +57,15 @@ class Program
         }
 
         Console.WriteLine($"El resultado es: {resultado}");
+    }
+        static void Restar()
+    {
+        Console.Write("Ingrese el primer número: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo número: ");
+        double num2 = double.Parse(Console.ReadLine());
+        double resultado = num1 - num2;
+        Console.WriteLine($"El resultado de la resta es: {resultado}");
     }
 
     static double Sumar(double a, double b)
