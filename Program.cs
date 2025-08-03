@@ -15,7 +15,22 @@ class Program
 
         int opcion = int.Parse(Console.ReadLine());
         // TODO: Implementar la lógica de menú
+
+        if (opcion == 1)
+        {
+            Sumar();
+        }
+
+            // TODO: Implementar funciones de suma, resta, multiplicación, división
+    }
+    static void Sumar()
+    {
+        Console.Write("Ingrese el primer número: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo número: ");
+        double num2 = double.Parse(Console.ReadLine());
+        double resultado = num1 + num2;
+        Console.WriteLine($"El resultado de la suma es: {resultado}");
     }
 
-    // TODO: Implementar funciones de suma, resta, multiplicación, división
 }
