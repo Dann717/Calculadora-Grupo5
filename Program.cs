@@ -20,6 +20,10 @@ class Program
         {
             Sumar();
         }
+        else if (opcion==4)
+        {
+            Dividir();
+        }
 
             // TODO: Implementar funciones de suma, resta, multiplicación, división
     }
