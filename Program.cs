@@ -32,5 +32,17 @@ class Program
         double resultado = num1 + num2;
         Console.WriteLine($"El resultado de la suma es: {resultado}");
     }
+    static void Dividir()
+{
+    Console.Write("Ingrese el primer número: ");
+    double a = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Ingrese el segundo número: ");
+    double b = Convert.ToDouble(Console.ReadLine());
+
+    if (b != 0)
+        Console.WriteLine($"Resultado: {a / b}");
+    else
+        Console.WriteLine("No se puede dividir entre cero.");
+}
 
 }
