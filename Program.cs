@@ -19,26 +19,17 @@ class Program
         {
             Sumar();
         }
-<<<<<<< HEAD
+
         else if (opcion == 2)
         {
             Restar();
         }
-        else if (opcin ==4)
+        else if (opcion ==4)
         {
             Division();
         }
 
-        // TODO: Implementar funciones de suma, resta, multiplicación, división
-=======
-        else if (opcion == 4)
-        {
-            Dividir();
-        }
-
-        // TODO: Implementar funciones de resta, multiplicación
->>>>>>> b5c5bc810d2c1833d47c1c5fc5b5a888b417825a
-    }
+        
 
     static void Sumar()
     {
@@ -74,19 +65,6 @@ class Program
             Console.WriteLine($"El resultado de la división es: {resultado}");
         }
 
-   static void Dividir()
-    
-        Console.Write("Ingrese el primer número: ");
-        double num1 = double.Parse(Console.ReadLine());
-        Console.Write("Ingrese el segundo número: ");
-        double num2 = double.Parse(Console.ReadLine());
-        if (num2 == 0)
-        {
-            Console.WriteLine("Error: No se puede dividir por cero.");
-        }
-        else
-        {
-            double resultado = num1 / num2;
-            Console.WriteLine($"El resultado de la división es: {resultado}");
-        }
-}
+    }
+    }
+    }
