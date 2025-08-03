@@ -24,6 +24,10 @@ class Program
         {
             Restar();
         }
+        else if (opcin ==4)
+        {
+            Division();
+        }
 
         // TODO: Implementar funciones de suma, resta, multiplicación, división
     }
@@ -45,5 +49,20 @@ class Program
         double resultado = num1 - num2;
         Console.WriteLine($"El resultado de la resta es: {resultado}");
     }
+    static void Division()
+    {
+        Console.Write("Ingrese el primer número: ");
+        double num1 = double.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo número: ");
+        double num2 = double.Parse(Console.ReadLine());
+        if (num2 == 0)
+        {
+            Console.WriteLine("Error: No se puede dividir por cero.");
+        }
+        else
+        {
+            double resultado = num1 / num2;
+            Console.WriteLine($"El resultado de la división es: {resultado}");
+        }
 
 }
