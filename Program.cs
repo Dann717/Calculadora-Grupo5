@@ -1,5 +1,5 @@
 ﻿// Calculadora de operaciones básicas
-
+///pruebas de estado
 using System;
 
 class Program
@@ -11,7 +11,9 @@ class Program
         Console.WriteLine("2. Resta");
         Console.WriteLine("3. Multiplicación");
         Console.WriteLine("4. División");
+        Console.WriteLine("5. Salir");
         Console.Write("Seleccione una opción: ");
+
 
         int opcion = int.Parse(Console.ReadLine());
 
@@ -34,18 +36,23 @@ class Program
         {
             Division();
         }
+        else if (opcion == 5)
+        {
+            Console.WriteLine("Gracias por usar la calculadora. ¡Hasta luego!");
+        }
+       
 
         
 
     static void Sumar()
-    {
-        Console.Write("Ingrese el primer número: ");
-        double num1 = double.Parse(Console.ReadLine());
-        Console.Write("Ingrese el segundo número: ");
-        double num2 = double.Parse(Console.ReadLine());
-        double resultado = num1 + num2;
-        Console.WriteLine($"El resultado de la suma es: {resultado}");
-    }
+        {
+            Console.Write("Ingrese el primer número: ");
+            double num1 = double.Parse(Console.ReadLine());
+            Console.Write("Ingrese el segundo número: ");
+            double num2 = double.Parse(Console.ReadLine());
+            double resultado = num1 + num2;
+            Console.WriteLine($"El resultado de la suma es: {resultado}");
+        }
         static void Restar()
     {
         Console.Write("Ingrese el primer número: ");
